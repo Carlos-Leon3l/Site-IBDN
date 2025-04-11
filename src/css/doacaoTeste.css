@@ -1,0 +1,20 @@
+.caixa-parceria3 {
+    background-color: #70ce5d;
+    padding: 20px;
+    width: 70%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    bottom: 20px; /* Alinha no fundo da imagem */
+    left: 50%; /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(20%); 
+    margin-bottom: 1%;
+}
+
+/* Estilo da mensagem */
+.mensagem-parceria3 {
+    font-size: 18px;
+    color: #333;
+}

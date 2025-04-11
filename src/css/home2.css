@@ -1,0 +1,1420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+ /*Botão Whatsapp e botão to up*/
+.fixed-button {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+#backToTop {
+    bottom: 20px;
+    left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+#whatsappButton {
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); 
+    animation: pulse 2s infinite;
+}
+
+#whatsappButton i {
+    font-size: 24px;
+    color: #fff;
+}
+/* Fim botão Whatsapp*/
+
+/* Aqui onde fica a imagem do inicio com a logo */
+.imagemfundoinicio{
+    background: 
+        linear-gradient(117deg, rgba(15, 211, 15, 0.322), rgba(39, 99, 39, 0.5)),
+        /*linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%), */
+        url('../img/imagens/background-header.jpg'); 
+    color: white;
+    margin-top: 7rem;
+    max-height: 40rem;
+    height: 40rem;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}   
+.backgroundinicio {
+ 
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-texto1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+.textoimageminicio {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+.textoimageminicio h2 {
+    background-color: #ffc800;  
+    font-size: 18px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    display: inline;
+}
+.textoimageminicio h1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    margin: 0;
+}
+.textoimageminicio p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.logo2 {
+   position: relative;
+   display: grid;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+.logo2-animada{
+    clip-path: inset(100% 0 0 0); /* Começa escondida */
+    animation: revelarDeBaixo 5s ease forwards;
+}
+
+@keyframes revelarDeBaixo {
+    0% {
+        clip-path: inset(100% 0 0 0); /* Somente a parte inferior visível */
+    }
+    100% {
+        clip-path: inset(0 0 0 0); /* Imagem completamente visível */
+    }
+}
+
+.logo2 img {
+    position: relative;
+    height: auto;
+    width: 450px;
+}
+/* aqui termina a imagem com logo */
+
+/*aqui começa a section de informações*/
+
+.grid-wrapper {
+    display: grid;
+    max-width: 100%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding: 20px 0 0 0;
+    
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    border: none;
+}
+
+.card {
+    
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    --bs-card-border-color: none !important;   
+}
+
+.icon-circle {
+    background-color: rgb(112, 207, 112);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+}
+
+.icon-circle i {
+    color: white;
+    font-size: 24px;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: rgb(112, 207, 112);
+}
+
+.small-text {
+    font-size: 12px;
+    color: gray;
+}
+/* aqui termina a section de informações*/
+
+/* começa o article de info  empresa da natureza */
+
+.texto-e-caixas{
+    display: flex;
+    margin: 10px;
+    padding: 0px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    
+}
+.paragrafos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   color: white;
+   background-color: #003b4a;
+}
+.par-pad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   gap: 2rem;
+}
+.paragrafos h1{
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 4rem;
+    font-size: 24px ;
+}
+.paragrafos h3 {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+}
+.paragrafos p {
+    display: flex;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.logo-caixa{
+    background: linear-gradient(90deg, green,  #003b4a  );   
+}
+.img-parc{
+    max-height: 100%;
+    height: auto;
+    width: 50rem;
+    padding: 0;
+    padding-top: 1rem;
+}
+
+/* termina o article info empresa parceira */
+
+
+/* aqui começa a section com as infos abrindo*/
+
+.linha-secao {
+    display: flex; /* Usando flexbox para alinhar os itens */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 20px 0; /* Espaçamento externo */
+}
+.linha-superior,
+.linha-inferior {
+    flex-grow: 1; /* Faz a linha ocupar o espaço disponível */
+    height: 2px; /* Altura da linha */
+    background-color: #ffc800; /* Cor da linha */
+    margin: 0 10px; /* Espaçamento lateral entre a linha e a palavra */
+}
+
+.palavra-central {
+    font-size: 24px; /* Tamanho da palavra central */
+    color: #ffc800; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    white-space: nowrap; /* Impede a quebra de linha na palavra */
+}
+
+
+.natureeco {
+    background-color: transparent;
+    background: 
+        linear-gradient(rgba(2, 12, 0, 0.377), #2D4818),    
+        url('../img/imagens/natureeco.jpg'); 
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 10rem;
+}
+.natureeco .linha-secao{
+    padding-top: 2rem;
+}
+
+
+
+.textonature {
+    font-size: 40px;
+    color: #ffc800;
+    text-align: center;
+    margin: 20px 0; 
+    font-weight: 100;
+    
+}
+
+.nature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nature a {
+    display: contents;
+}
+.nature img {
+    height: auto;
+    width: 10%;
+    
+}
+
+.texto2nature {
+    font-size: 16px; 
+    text-align: center;  
+    padding-top: 3rem;
+    max-width: 1140px;
+    color: #ffffff;
+}
+.texto2nature h3 {
+    font-size: 19px;
+}
+
+
+/* aqui começa o article com info tooltip*/
+.slide {
+    max-width: 100%;
+    width: auto;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagina1, .pagina2, .pagina3, .pagina4 {
+    width: 200px;
+    height: 340px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: width 0.5s;
+    display: flex;
+    flex-direction: row;
+    background-position: 30%;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 35px 80px rgb(17, 16, 16);
+}
+
+/* Esconde o texto inicialmente */
+.descricao {
+    display: none;
+    padding: 3rem;
+    position: absolute;
+    top: 0;
+    left: 170px;
+    width: 350px;
+    height: 100px; /* Preenche a altura da caixa */
+    border-radius: 10px;
+    flex-direction: column;
+    
+}
+
+/* Mostra o texto ao passar o mouse sobre a página */
+.pagina1:hover .descricao {
+    display: flex;
+    padding: 10px ;
+}
+.desc-texto{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.logo-par img{
+    position: absolute;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 5rem;
+    padding: 20px;
+
+}
+.pagina1:hover {
+    width: 550px;
+    background-position: center center; 
+    background-size: contain;
+}
+.pagina1 {
+    background-size: cover;
+    background-position: center ;
+    background-color: #1abc9c;
+    background-image: linear-gradient(180deg, #707070AD, 90%, rgba(32, 29, 29, 0.705)),
+    url('../img/imagens/protetores-logo1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: width 0.5s ,background-position 1s ease-in-out ;
+}
+.pagina2{
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(70, 58, 58, 0.726) 90%, rgba(43, 38, 38, 0.705)),
+    url('../img/imagens/background-protetores.png');
+    background-color: transparent;
+}
+.pagina3 {
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(70, 58, 58, 0.726) 90%, rgba(43, 38, 38, 0.705)),
+    url('../img/imagens/peca-de-teatro-ibdn.png');
+    background-color: transparent;
+}
+.pagina4 {
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(43, 37, 37, 0.644) 90%, rgba(43, 38, 38, 0.705)),
+    url('../img/imagens/jardim-dos-sentidos1.jpg');
+    background-color: transparent;
+}
+
+.pagina2:hover, .pagina3:hover, .pagina4:hover {
+    width: 500px; /* Expande ao passar o mouse */
+}
+.botao-link {
+    display: flex; /* Permite que o botão tenha tamanho automático */
+    margin-top: 10px; /* Espaço acima do botão */
+    padding: 5px; /* Adiciona um pequeno preenchimento */
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.botao-link:hover {
+    background-color: #84d488; /* Muda a cor ao passar o mouse */
+}
+
+.pagina2:hover .descricao2 {
+    display: flex;
+}
+.pagina2 img{
+    margin-left: 10px;
+    margin-top: 4rem;
+    width: 180px;
+    height: 200px;
+    
+}
+
+.pagina2:hover {
+    width: 580px;
+}
+.descricao2 {
+    display: none;
+    padding: 13px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 350px;
+    height: 100px; /* Preenche a altura da caixa */
+    border-radius: 10px;
+    flex-direction: column;
+}
+.pagina3:hover .descricao3 {
+    display: flex;
+}
+.pagina3:hover {
+    width: 550px;
+}
+.pagina3 img {
+    margin-top: 5rem;
+}
+.descricao3 {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 310px;
+    height: 100px; /* Preenche a altura da caixa */
+    border-radius: 10px;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+.pagina3 .botao-link {
+    margin-top: 2rem;
+}
+.pagina4:hover .descricao4 {
+    display: flex;
+}
+.pagina4:hover {
+    width: 550px;
+}
+.pagina4 img {
+    margin-top: 5rem;
+    width: 200px;
+    height: 170px;
+}
+.descricao4 {
+    display: none;
+    padding: 4px;
+    position: absolute;
+    margin-top: 2rem;
+    left: 200px;
+    width: 310px;
+    height: 100px; /* Preenche a altura da caixa */
+    border-radius: 10px;
+    flex-direction: column;
+}
+.pagina4 .botao-link {
+    margin-top: 3.5rem;
+}
+
+/* aqui acaba a imagem com infos saiba mais */
+
+.quem-somos-comeco {
+    background-image: url('../img/imagens/quem-somos-começo.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    min-height: 600px;
+    margin-top: 10px;
+    
+    
+}
+.comeco-qs {
+    margin-top: 0px;
+}
+.comeco-qs h2 {
+    color: #84d488;
+    font-weight: bold;
+}
+
+.imagem-texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 20px;
+    max-width: 1140px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.imagem-texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 20px;
+    max-width: 1140px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.imagem-texto img {
+    width : 300px ;
+    height : auto ;
+}
+/* Nova estrutura para a classe 'foto-presidente' */
+.foto-presidente {
+    position: relative;
+    display: inline-block;
+    margin-left: 2rem;
+}
+.foto-presidente {
+    position: relative;
+    display: inline-block; /* ou flex, dependendo do layout desejado */
+    padding: 10px; /* Ajuste conforme necessário para a borda verde ao redor */
+}
+
+.foto-presidente img {
+    position: relative;
+    z-index: 1; /* Garante que a imagem fique acima do fundo verde */
+    width: 100%; 
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.texto-abaixo {
+    text-align: center;
+    margin-top: 10px; /* Ajuste o espaçamento conforme necessário */
+    font-size: 1rem;
+    color: #6e6363;
+    font-weight: bold;
+    font-style: italic;
+}
+.texto-maisembaixo{
+    text-align: center;
+    font-size: 1rem;
+    color: #25D366;
+}
+
+/* Criando o fundo verde atrás da imagem */
+.foto-presidente::before {
+    content: "";
+    position: absolute;
+    top: -10px;   /* Ajuste conforme necessário */
+    left: -10px;  /* Ajuste conforme necessário */
+    width: 90%;
+    height: 60%;
+    background-color: #84d488;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Estilos da imagem do presidente */
+.foto-presidente img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.texto-direita, .texto-esquerda {
+    width: 100%; /* Define a largura do texto */
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.texto-direita {
+    text-align: left;
+}
+
+.texto-esquerda {
+    text-align: right;
+}
+
+.background2-quemsomos {
+    height: 0px; /* Ajuste conforme a altura desejada */
+    background-color: #d1d1d1;
+}
+.fundoqs2 {
+    background-image: url('../img/imagens/fundo-quem-somos.png');
+    background-size: cover; 
+    width: 100%; 
+    min-height: 100vh;
+    box-sizing: border-box; 
+    position: relative;
+    display: flex; /* Alinha o conteúdo interno */
+    flex-direction: column;
+} 
+.local {
+    display: flex; /* Alinha a imagem e o texto horizontalmente */
+    justify-content: space-between; /* Espaço entre a imagem e o texto */
+    align-items: center; /* Centraliza a imagem e o texto verticalmente */
+    gap: 2rem; /* Espaço entre a imagem e o texto */
+    margin-left: 100px;
+    max-width: 1140px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.local h2 {
+    color: #84d488;
+    font-weight: bold;
+}
+
+.bussola img {
+    max-width: 100%; /* Faz a imagem se ajustar ao container */
+    height: auto;
+    width: 200px; /* Ajuste conforme necessário */
+}
+
+.texto-local {
+    flex: 1; /* O texto ocupará o restante do espaço */
+    padding: 0 20px; /* Espaçamento interno ao redor do texto */
+}
+
+.onde-estamos {
+    position: relative;
+    width: 100%;
+    height: auto; /* Changed from fixed height */
+    overflow: visible; /* Changed from hidden */
+    
+}
+.pais {
+    width: 100%;
+    height: 100%;
+    display: block;
+    width: 400px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+
+.textos {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.textos.show {
+    opacity: 1;
+}
+
+.frase {
+    background: rgba(37, 163, 12, 0.7);
+    position: relative;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    padding: 10px;
+    margin: 5px 0;
+    width: 200px;
+}
+
+
+.frase p {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   padding: 5px;
+    margin: 5px ;
+    font-weight:500;
+    color: white;
+   
+}
+.frase:nth-child(odd) {
+    align-self: flex-start;
+    margin-left: 28%;
+    transform: translateX(-100%);
+}
+
+.frase:nth-child(even) {
+    align-self: flex-end;
+    margin-right: 29%;
+    transform: translateX(100%);
+}
+.frase:nth-child(1) {
+   /* Adjust as needed */
+}
+
+.frase:nth-child(2) {
+     /* Adjust as needed */
+}
+
+.frase:nth-child(3) {
+     /* Adjust as needed */
+    margin-top: -9rem;
+}
+
+.textos.show .frase {
+    transform: translateX(0);
+}
+
+.textos.show .frase:nth-child(1) { transition-delay: 0.3s; }
+.textos.show .frase:nth-child(2) { transition-delay: 0.5s; }
+.textos.show .frase:nth-child(3) { transition-delay: 0.6s; }
+
+.espaçamento-quemsomos{
+    margin-top: 7rem;
+    margin-bottom: 10px;
+}
+
+/* aqui começa a parte das ODS*/
+
+.background-ods2 {
+    background-image: url('../img/imagens/background-ods2.jpg'); /* Caminho da imagem */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+.todo-Ods {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    max-width: 1140px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding: 10px;
+    /* lembrar de usar isso pra as outras coisas depois*/
+    
+}
+.logodaODS{
+   display: flex;
+   justify-content: center;
+}
+.logodaODS img{
+    display: flex;
+    padding: 35px 0 0 0;
+    
+} 
+
+.area-todos {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.todo-ods2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column img, .right-column img {
+    width: 120px;
+    height: auto;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.left-column img:hover, .right-column img:hover {
+    transform: scale(1.05);
+}
+
+.text-box {
+    width: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 20px;
+}
+
+
+.espaçamentoODS-footer{
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+.espaçamento{
+
+}
+
+/* Responsivo do background fundo inicio*/
+
+@media (max-width: 768px) {
+    .imagemfundoinicio {
+        height: auto; /* Allow height to adjust */
+        padding: 5px; /* Reduce padding on mobile */
+        width: 100%;
+        
+    }
+    
+    .textoimageminicio h2 {
+        font-size: 16px; /* Slightly smaller font size */
+    }
+    
+    .logo2 img {
+        width: 100%; /* Make logo responsive */
+        max-width: auto; /* Limit max width */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .imagemfundoinicio {
+        height: 30rem; 
+    }
+    
+    .textoimageminicio h2 {
+        font-size: 17px; 
+    }
+    
+    .logo2 img {
+        width: 80%; 
+        max-width: 400px;
+    }
+}
+
+
+/* Responsive styles dos quadrados debaixo da imagem */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+/*aqui termina a responsividade styles */
+
+/* aqui começa a responsividade do empresa parceira natureza */
+
+@media (max-width: 768px) {
+    .texto-e-caixas {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-caixa{
+        background: linear-gradient(180deg, green,  #003b4a  );   
+    }
+    .paragrafos{
+        text-align: center;
+        padding-top: 3rem;
+    }
+    .par-pad{
+        margin-right: 0;
+    }
+    .img-parc{
+        max-height: 100%;
+        width: 99%;
+        height: auto;
+    }
+    .natureeco .palavra-central {
+        font-size: 12px;
+    }
+    .nature img {
+        width: 20%; 
+        max-width: none; 
+    }
+
+    .texto2nature {
+        padding-top: 5%;
+        padding: 2rem; 
+    }
+
+}
+/* aqui temmos a responsividade do background nature com os hovers */
+@media (max-width: 480px) {
+    
+    .natureeco .palavra-central{
+        font-size: 8px;
+    }
+}
+/* responsivo dos hover */
+@media (max-width: 768px) {
+    .slide {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px; 
+        height: 100%;
+    }
+    /* Hover para expandir à esquerda */
+    .pagina1:hover, .pagina2:hover, .pagina3:hover, .pagina4:hover {
+    }
+
+    /* Exibe o conteúdo abaixo da imagem */
+    .descricao, .descricao2, .descricao3, .descricao4 {
+        opacity: 0;
+        visibility: hidden;
+        position: relative;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        padding: 10px;
+        width: 100%;
+        left: 0;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        border-radius: 10px; 
+        font-size: 16px;   
+    }
+    .descricao {
+        left: 100px;
+        margin-right: 6rem;
+        margin-left: 4rem;
+    }
+    
+    .pagina1:hover .descricao, 
+    .pagina2:hover .descricao2, 
+    .pagina3:hover .descricao3, 
+    .pagina4:hover .descricao4 {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(10px);
+    }
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(10px); /* Efeito visual */
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+        .slide {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            gap: 20px; 
+            height: 100%;
+        }
+        /* Hover para expandir à esquerda */
+        /* Exibe o conteúdo abaixo da imagem */
+        .descricao, .descricao2, .descricao3, .descricao4 {
+            opacity: 0;
+            visibility: hidden;
+            position: relative;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            padding: 10px;
+            width: 100%;
+            left: 0;
+            margin-top: 10px;
+            text-align: center;
+            color: white;
+            border-radius: 10px; 
+            font-size: 16px;   
+        }
+        .descricao {
+            left: 100px;
+            margin-right: 6rem;
+            margin-left: 4rem;
+        }
+        
+        .pagina1:hover .descricao, 
+        .pagina2:hover .descricao2, 
+        .pagina3:hover .descricao3, 
+        .pagina4:hover .descricao4 {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(10px);
+        }
+    .show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(10px); /* Efeito visual */
+    }
+}
+/* aqui termina os hovers*/ 
+
+/* aqui começa o quem somos mobile */
+
+@media (max-width: 768px)  {
+    .imagem-texto .logoquemsomos {
+        width : 200px ;
+        height: auto ;
+    }
+    .texto-local {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto-local p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .texto-direita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .texto-esquerda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .pais {
+        width: 40%;
+        height: auto;
+    }
+    .frase:nth-child(odd) {
+        align-self: flex-start;
+        margin-left: 5%;
+        /*transform: translateX(-100%);*/
+    }
+    .frase {
+        transform: translateX(0);
+    }
+    
+    .frase:nth-child(even) {
+        align-self: flex-start;
+        margin-left: 30rem;
+        transform: translateX(0);
+    }
+    .frase:nth-child(1) {
+      
+    }
+    
+    .frase:nth-child(2) {
+        
+    }
+    
+    .frase:nth-child(3) {
+        
+        margin-top: -9rem;
+    }
+    
+    .textos.show .frase {
+        transform: translateX(0);
+    }
+    
+    .textos.show .frase:nth-child(1) { transition-delay: 0.3s; }
+    .textos.show .frase:nth-child(2) { transition-delay: 0.5s; }
+    .textos.show .frase:nth-child(3) { transition-delay: 0.6s; }
+}
+
+
+@media (max-width: 768px) {
+    .imagem-texto {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center;
+    }
+
+    .imagem-texto img {
+        margin: 0; /* Remove margem lateral */
+        width: 100%; /* Faz a imagem ocupar a largura total */
+    }
+
+    .local {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    .pais {
+        width: 30%;
+        height: auto;
+    }
+    .frase:nth-child(odd) {
+        align-self: flex-start;
+        margin-left: 5%;
+        /*transform: translateX(-100%);*/
+    }
+    .frase {
+    transform: translateX(0);
+    padding: 10px;
+    margin: 5px 0;
+    width: 120px;
+    height: 100px;
+    margin-top: -3rem;
+    }
+    .frase p {
+        font-size: 7px;
+    }
+    
+    .frase:nth-child(even) {
+        align-self: flex-start;
+        margin-left: 12rem;
+        transform: translateX(0);
+    }
+    .frase:nth-child(1) {
+      
+    }
+    
+    .frase:nth-child(2) {
+        
+    }
+    
+    .frase:nth-child(3) {
+        
+        margin-top: -9rem;
+    }
+    
+    .textos.show .frase {
+        transform: translateX(0);
+    }
+    
+    .textos.show .frase:nth-child(1) { transition-delay: 0.3s; }
+    .textos.show .frase:nth-child(2) { transition-delay: 0.5s; }
+    .textos.show .frase:nth-child(3) { transition-delay: 0.6s; }
+}
+
+/* aqui termina o media do quem somos e pais */
+
+/* aqui começa o footer*/
+/* aqui termina o footer*/
+
+/* aqui e o wats button responsivo*/
+@media (max-width: 768px) {
+    #whatsappButton {   
+        bottom: 10px;
+        right: 0;
+        position: fixed;
+        
+    }
+}
+@media (max-width: 1024px) {
+    #whatsappButton{
+       
+       z-index: 1000;
+       position: fixed;
+        
+    }
+    
+}
+@media (max-width: 480px)  {
+    #WhatsappButton{
+        
+    }
+}
+/* aqui termina wats button responsivo*/
+
+@media (max-width: 480px) {
+    /* Ajuste de imagem principal */
+    .imagemfundoinicio {
+        height: auto;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .textoimageminicio h2 {
+        font-size: 14px; /* Fonte menor para títulos */
+        text-align: center;
+    }
+
+    .logo2 img {
+        width: 80%; /* Logo menor */
+        margin: 0 auto; /* Centralizar */
+    }
+
+    /* Ajuste dos quadrados */
+    .card-container {
+        grid-template-columns: 1fr; /* Um card por linha */
+        gap: 10px;
+        padding: 10px;
+    }
+}
+    @media (max-width: 480px) {
+    /* Empresa Parceira Natureza */
+    .texto-e-caixas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-caixa {
+        padding: 1rem;
+        background: linear-gradient(180deg, green, #003b4a);
+        width: 100%;
+    }
+
+    .paragrafos {
+        padding-top: 1rem;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .palavra-central {
+        font-size: 10px;
+    }
+
+    .img-parc {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ajuste do hover */
+    .slide {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .pagina1 img{
+        height: 130px;
+        width: 100;
+    }
+    .pagina2 img{
+        height: 120px;
+        width: 100px;
+    } 
+    .pagina3 img {
+        height: 120px;
+        width: 100px;
+    }
+    .pagina4 img {
+        height: 120px;
+        width: 100px;
+    }
+    .pagina1:hover, .pagina2:hover, .pagina3:hover, .pagina4:hover {
+        width: 300px;
+    }
+    .pagina1, .pagina2, .pagina3, .pagina4 {
+        width: 200px;
+        height: 250px;
+    }
+    .descricao {
+        font-size: 8px;
+    }
+    
+    .descricao2, .descricao3, .descricao4 {
+        font-size: 8px;
+        width: 50%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    /* Quem Somos */
+    .imagem-texto {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logoquemsomos {
+        width: 150px; /* Logo menor */
+        margin-bottom: 1rem;
+    }
+
+    .texto-local, .texto-direita, .texto-esquerda {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .pais {
+        width: 60%; /* Ajuste de largura */
+    }
+
+    .frase {
+        font-size: 13px;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    /* Localização */
+    .local {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Margens e espaçamentos */
+    .container {
+        padding: 5px;
+    }
+}
+@media (max-width: 400px) {
+    .palavra-central{
+        font-size: 8px;
+    }
+}
+
+
+
+/* responsividade da ODS */
+@media (max-width: 480px) {
+    .logodaODS {
+        align-items: center;
+        display: flex;
+    }
+    .logodaODS img {
+        height: auto;
+        width: 300px;
+    }
+    .todo-Ods {
+        padding: 5px;
+    }
+
+    .todo-ods2 {
+        padding: 0;
+        gap: 0;
+       
+    }
+
+    .left-column img, .right-column img {
+        width: 80px; /* Diminui o tamanho das imagens */
+    }
+
+    .text-box {
+        padding: 7px;
+        font-size: 8px; /* Ajusta o tamanho da fonte */
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .espaçamentoODS-footer {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) and (min-width:480px) {
+    .text-box{
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px) {
+    .todo-ods2 img{
+        height: auto;
+        width: 50px;
+    }
+    .text-box {
+        font-size: 8px;
+    }
+}
+
+/* termino da responsividade ODS so para mobile*/
+
+/* Responsividade da caixa com gradiente */
+@media (max-width: 1024px) {
+    .texto-e-caixas {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-caixa{
+        background: linear-gradient(180deg, green,  #003b4a  );   
+    }
+    .paragrafos{
+        text-align: center;
+        padding-top: 3rem;
+    }
+    .par-pad{
+        margin-right: 0;
+    }
+    .img-parc{
+        width: 100%;
+        height: auto;
+    }
+   
+}

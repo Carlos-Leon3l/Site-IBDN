@@ -1,0 +1,437 @@
+/* Estilo do artigo .titulo */
+.titulo {
+    background-color: #243857;
+    display: flex;
+    flex-direction: row;
+    width: 100%;  /* Garante que ocupa toda a largura disponível */
+    height: auto;
+}
+
+/* Estilo para a imagem dentro do artigo .titulo */
+.titulo img {
+    width: 50%;
+    height: 35rem;
+    display: flex;
+}
+
+/* Estilo do título dentro do .titulo */
+.titulo h2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+
+/* Estilo do segundo artigo com o fundo e conteúdo */
+.Projects {
+    background: 
+        linear-gradient(180deg, #243857 10%, rgba(39, 48, 99, 0.5)),
+        url('src/img/imagens/distribuicao-de-cartilhas-ibdn-pb.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    color: white;
+    width: 100%;
+}
+
+/* Definição de estilo para o conteúdo dentro do artigo .Projects */
+.Projects .Projeto {
+    display: block;
+    text-align: left;
+    position: relative;
+    width: 20%;
+}
+
+.Projects img {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.Projeto_Protetores img {
+    margin-left: 4rem;
+}
+
+.texto-left {
+    width: 30rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+
+strong {
+    color: rgb(7, 201, 7);
+}
+
+.linha-secao {
+    display: flex; /* Usando flexbox para alinhar os itens */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 20px 0; /* Espaçamento externo */
+    width: 100%; /* Garante que o container ocupe toda a largura */
+}
+
+.linha-superior,
+.linha-inferior {
+    flex-grow: 1; /* Faz a linha ocupar o espaço disponível */
+    height: 7px; /* Altura da linha */
+    background-color: rgb(7, 201, 7); /* Cor da linha */
+    margin: 0 10px; /* Espaçamento lateral entre a linha e a palavra */
+}
+
+.palavra-central {
+    font-size: 30px; /* Tamanho da palavra central */
+    color: rgb(7, 201, 7); /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    white-space: nowrap; /* Impede a quebra de linha na palavra */
+    text-align: center; /* Garante que o texto esteja centralizado */
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+
+.div_geral {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+/* Cartilhas */
+.Cartilhas_projetos{
+    margin-top: 5rem;
+    
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: space-around;
+}
+.subtitulo-cartilhas {
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+    width: 70%;
+    
+}
+
+.Cartilhas {
+    text-align: center; 
+    font-size: 40px; 
+}
+
+.titulo { 
+    text-transform: uppercase; 
+    font-size: 40px; 
+}
+
+.carousel {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carrosel {
+    
+    margin-top: 8rem;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 200px; /* Largura fixa para criar o retângulo vertical */
+    height: 300px; /* Altura fixa para criar o retângulo vertical */
+    display: block;
+    margin: auto; /* Centraliza a imagem */
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color:  rgb(7, 201, 7);
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Escolas */
+.Escolas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    position: relative;
+}
+
+/* Definindo a animação de deslizamento */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%); /* Começa fora da tela à direita */
+        opacity: 0; /* Inicialmente invisível */
+    }
+    100% {
+        transform: translateX(0); /* Move para a posição final */
+        opacity: 1; /* Torna a imagem visível */
+    }
+}
+
+/* Aplicando o efeito às imagens */
+.Escola_1 img, .Escola_2 img, .Escola_3 img {
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    opacity: 0; /* Começa invisível */
+    transform: translateX(100%); /* Começa fora da tela */
+    transition: opacity 2.5s ease, transform 1.5s ease; /* Transição mais lenta */
+}
+
+/* Adicionando um atraso diferente para cada imagem para um efeito em sequência */
+.Escola_1.in-view img {
+    transform: translateX(0); /* Quando entra na tela, move para a posição */
+    opacity: 1; /* Torna visível */
+}
+
+.Escola_2.in-view img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.Escola_3.in-view img {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Números */
+.Protetores_Titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: 
+        linear-gradient(180deg, #243857 10%, rgba(39, 48, 99, 0.5)),
+        url('src/img/imagens/bg-atitude-limpa.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    color: white;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+
+.Texto_Protetores {
+    font-family: 'Poppins', sans-serif;
+    line-height:  30px;
+}
+
+.real_titulo h2 {
+    color: rgb(7, 201, 7);
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(7, 201, 7);
+    padding-bottom: 10px;
+}
+
+.numeros-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.numeros-container .titulo_nossonumero h2 {
+    color: #1A76D1;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid #1A76D1;
+    padding-bottom: 10px;
+}
+
+.numeros-item {
+    display: inline-block;
+    width: 28%;
+    margin: 0 1%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.numeros-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.numeros-item p {
+    color: #FFC107;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.numeros-item span {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Botão doação */
+.caixa-parceria2 {
+    background-color: #70ce5d;
+    padding: 20px;
+    width: 70%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    bottom: 20px; /* Alinha no fundo da imagem */
+    left: 50%; /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(20%); 
+}
+
+/* Estilo da mensagem */
+.mensagem-parceria2 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Estilo do botão de doação */
+.link-doacao {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 1rem;
+}
+
+/* Efeito hover no botão */
+.link-doacao:hover {
+    background-color: yellow;
+    color: red;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .div_geral {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .Projects .Projeto {
+        width: 80%; /* Aumenta a largura em telas menores */
+    }
+
+    .numeros-item {
+        width: 45%; /* Ajusta a largura dos itens numéricos */
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .titulo img {
+        width: 100%; /* Imagem ocupa 100% da largura */
+        height: auto; /* Altura automática */
+    }
+
+    .titulo h2 {
+        font-size: 15px; /* Reduz o tamanho da fonte */
+        padding-top: 5rem; /* Ajusta o padding */
+        padding-bottom: 4rem;
+        display: flex;
+        text-align: center;
+
+    }
+
+    .palavra-central {
+        font-size: 24px; /* Reduz o tamanho da palavra central */
+    }
+
+    .texto-left {
+        width: 90%; /* Aumenta a largura do texto */
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .numeros-item {
+        width: 100%; /* Cada item ocupa 100% da largura */
+        margin-bottom: 20px; /* Espaçamento entre os itens */
+    }
+
+    .caixa-parceria2 {
+        width: 90%; /* Ajusta a largura do botão de doação */
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .titulo h2 {
+        font-size: 18px; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .subtitulo-cartilhas {
+        font-size: 20px; /* Ajusta o tamanho da fonte do subtítulo */
+    }
+
+    .carousel-control {
+        font-size: 20px; /* Reduz o tamanho dos controles do carrossel */
+    }
+
+    .link-doacao {
+        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+    }
+    .Projeto_Protetores img {
+        margin-left: 0;
+    }
+    .carousel-control.prev {
+        left: 30px;
+    }
+    
+    .carousel-control.next {
+        right: 30px;
+    }
+    .carousel-control {
+        font-size: 50px;
+        
+    }
+    .Escolas {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .texto-left {
+        width: 100%;
+    }
+}

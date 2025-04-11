@@ -1,0 +1,271 @@
+.swiper {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    margin-top: 5rem;
+  }
+  .swiper img{
+    object-fit: cover;
+  }
+  .slide-content {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+  
+  /* Imagem adicional à esquerda */
+  .slide-icon {
+    width: 130px;
+    height: auto;
+  }
+  .slide-icon2{
+    width: 170px;
+    height: auto;
+  }
+  
+  /* Contêiner do texto e botão à direita */
+  .text-content {
+    max-width: 60%;
+  }
+  
+  .text-content h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    margin: 0 0 10px;
+  }
+  
+  .slide-button {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 5rem;
+  }
+  
+  .slide-button:hover {
+    background-color: #84d488;
+  }
+
+  .background-nossoprojeto{
+    background-image: linear-gradient(180deg, rgba(43, 37, 37, 0.644) 90%, rgba(43, 38, 38, 0.705)),
+    url('../img/imagens/footer-IBDN.jpg');
+    width: 100%;;
+    height: 40rem;
+  }
+  .frase-NP{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    color: white;
+    padding: 0 35rem 0 35rem;
+  }
+  /* aqui vai ser a responsividade do carrossel*/
+  @media (max-width: 1024px) {
+    .background-nossoprojeto{
+      width: 100%;
+      height: auto;
+      bottom: 4rem;
+    }
+    .swiper{
+      display: flex;
+      margin-left: auto;
+      
+      margin-right: auto;
+      margin-top: 0;
+      width: 60%;
+    }
+    .frase-NP{
+      padding: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .background-nossoprojeto{
+      width: 100%;
+      height: 45rem;
+    }
+    .swiper{
+      height: 50%;
+      width: 100%;
+    }
+    .frase-NP{
+     display: flex;
+     padding: 0;
+
+    }
+  }
+  @media (max-width: 480px) {
+    .swiper {
+      height: 600px;
+      display: flex;
+      margin-top: 5rem;
+    }
+    .slide-content {
+      position: absolute;
+      bottom: 20%;
+      left: 5%;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+      max-width: 80%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      z-index: 10;
+      justify-content: center;
+      margin-left: 2rem;
+      
+    }
+    .swiper{
+      height: 35%;
+    }
+    .imagens-ecosustentavel{
+      height: 100%;
+    }
+    
+    /* Imagem adicional à esquerda */
+    .slide-icon {
+      width: 60px;
+      height: auto;
+    }
+    .slide-icon2{
+      width: 70px;
+      height: auto;
+    }
+    .slide-button {
+      display: inline-block;
+      padding: 3px 3px;
+    }
+    
+    /* Contêiner do texto e botão à direita */
+    .text-content {
+      max-width: 90%;
+    }
+    
+    .text-content h2 {
+      font-size: 12px;
+      margin: 0 0 10px;
+    }
+    
+    .text-content p {
+      font-size: 10px;
+      margin: 0 0 10px;
+    }
+    
+    
+  }
+/* aqui termina a responsividade do carousel*/
+
+/* carrossel 2 automatico  Wellington*/
+
+.carousel-background2 {
+    width: 100%;
+    height:40rem;
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(43, 37, 37, 0.644) 90%, rgba(43, 38, 38, 0.705)),
+    url('../img/back.jpg');
+    position: relative;
+}
+.Container-dos-carrossel{
+  overflow: hidden;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  padding-top: 10rem;
+}
+.carousel-background2 .linha-secao {
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+.caixa-parceria2 {
+  background-color: #70ce5d;
+  padding: 20px;
+  width: 70%;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 20px; /* Alinha no fundo da imagem */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Centraliza com precisão */
+}
+
+/* Estilo da mensagem */
+.mensagem-parceria2 {
+  font-size: 18px;
+  color: #333;
+  
+}
+
+/* Estilo do botão de doação */
+.link-doacao {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 1rem;
+}
+
+/* Efeito hover no botão */
+.link-doacao:hover {
+  background-color: yellow;
+  color: red;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 60s linear infinite; /* Velocidade ajustável */
+}
+
+.carousel-track a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-track img {
+    max-width: 150px; /* Tamanho máximo ajustável */
+    max-height: 80px; /* Altura máxima ajustável */
+    object-fit: contain; /* Evita distorção */
+    margin: 0 10px; /* Espaçamento entre as imagens */
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+@media (max-width: 768px) and (min-width:480px) {
+  .caixa-parceria2{
+    width: 100%;
+  }
+}
+@media (max-width:480px) {
+  .caixa-parceria2{
+    width: 100% ;
+  }
+}
+/* aqui vou ver se funciona colocar os texto dentro da imagem carrossel do hiro*/
+
+

@@ -1,0 +1,587 @@
+
+/* Aqui Começa 'Projetos que inspiram'*/
+.linha-secao {
+    display: flex; /* Usando flexbox para alinhar os itens */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 20px 0; /* Espaçamento externo */
+}
+.linha-superior,
+.linha-inferior {
+    flex-grow: 1; /* Faz a linha ocupar o espaço disponível */
+    height: 2px; /* Altura da linha */
+    background-color: #ffc800; /* Cor da linha */
+    margin: 0 10px; /* Espaçamento lateral entre a linha e a palavra */
+}
+.palavra-central {
+    font-size: 24px; /* Tamanho da palavra central */
+    color: #ffc800; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    white-space: nowrap; /* Impede a quebra de linha na palavra */
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+.natureeco {
+    background-color: transparent;
+    background: 
+        linear-gradient(rgba(2, 12, 0, 0.377), #2D4818),    
+        url('src/img/imagens/natureeco.jpg'); 
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 10rem;
+}
+.natureeco .linha-secao{
+    padding-top: 2rem;
+}
+.textonature {
+    font-size: 40px;
+    color: #ffc800;
+    text-align: center;
+    margin: 20px 0; 
+    font-weight: 100;
+    
+}
+.nature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nature a {
+    display: contents;
+}
+.nature img {
+    height: auto;
+    width: 10%;
+    
+}
+.texto2nature {
+    font-size: 16px; 
+    text-align: center;  
+    padding-top: 3rem;
+    max-width: 1140px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+.texto2nature h3 {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+/* aqui começa o article com info tooltip*/
+.slide {
+    max-width: 100%;
+    width: auto;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+.pagina1, .pagina2, .pagina3, .pagina4 {
+    width: 200px;
+    height: 340px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: width 0.5s;
+    display: flex;
+    flex-direction: row;
+    background-position: 30%;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 35px 80px rgb(17, 16, 16);
+}
+/* Esconde o texto inicialmente */
+.descricao {
+    display: none;
+    padding: 3rem;
+    position: absolute;
+    top: 0;
+    left: 170px;
+    width: 350px;
+    height: 100px; /* Preenche a altura da caixa */
+    border-radius: 10px;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+    
+}
+/* Mostra o texto ao passar o mouse sobre a página */
+.pagina1:hover .descricao {
+    display: flex;
+    padding: 10px ;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+.desc-texto{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.logo-par img{
+    position: absolute;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 5rem;
+    padding: 20px;
+
+}
+.pagina1:hover {
+    width: 550px;
+    background-position: center center; 
+    background-size: contain;
+}
+.pagina1 {
+    background-size: cover;
+    background-position: center ;
+    background-color: #1abc9c;
+    background-image: linear-gradient(180deg, #707070AD, 90%, rgba(32, 29, 29, 0.705)),
+    url('../img/imagens/protetores-logo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: width 0.5s ,background-position 1s ease-in-out ;
+}
+.pagina2{
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(70, 58, 58, 0.726) 90%, rgba(43, 38, 38, 0.705)),
+    url('../img/imagens/background-protetores.png');
+    background-color: transparent;
+}
+.pagina3 {
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(70, 58, 58, 0.726) 90%, rgba(43, 38, 38, 0.705)),
+    url('../img/imagens/peca-de-teatro-ibdn.png');
+    background-color: transparent;
+}
+.pagina4 {
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(43, 37, 37, 0.644) 90%, rgba(43, 38, 38, 0.705)),
+    url('../img/imagens/jardim-dos-sentidos1.jpg');
+    background-color: transparent;
+}
+
+.pagina2:hover, .pagina3:hover, .pagina4:hover {
+    width: 500px; /* Expande ao passar o mouse */
+}
+.botao-link {
+    display: flex; /* Permite que o botão tenha tamanho automático */
+    margin-top: 10px; /* Espaço acima do botão */
+    padding: 5px; /* Adiciona um pequeno preenchimento */
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.botao-link:hover {
+    background-color: #84d488; /* Muda a cor ao passar o mouse */
+}
+.pagina2:hover .descricao2 {
+    display: flex;
+}
+.pagina2 img{
+    margin-left: 10px;
+    margin-top: 4rem;
+    width: 180px;
+    height: 200px;
+    
+}
+.pagina2:hover {
+    width: 580px;
+}
+.descricao2 {
+    display: none;
+    padding: 13px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 350px;
+    height: 100px; /* Preenche a altura da caixa */
+    border-radius: 10px;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+.pagina3:hover .descricao3 {
+    display: flex;
+}
+.pagina3:hover {
+    width: 550px;
+}
+.pagina3 img {
+    margin-top: 5rem;
+}
+.descricao3 {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 310px;
+    height: 100px; /* Preenche a altura da caixa */
+    border-radius: 10px;
+    flex-direction: column;
+    padding-top: 2rem;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+.pagina3 .botao-link {
+    margin-top: 2rem;
+}
+.pagina4:hover .descricao4 {
+    display: flex;
+}
+.pagina4:hover {
+    width: 550px;
+}
+.pagina4 img {
+    margin-top: 5rem;
+    width: 200px;
+    height: 170px;
+}
+.descricao4 {
+    display: none;
+    padding: 4px;
+    position: absolute;
+    margin-top: 2rem;
+    left: 200px;
+    width: 310px;
+    height: 100px; /* Preenche a altura da caixa */
+    border-radius: 10px;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+.pagina4 .botao-link {
+    margin-top: 3.5rem;
+}
+/* Aqui termina o 'Projetos que inspiram' */
+/* Aqui começa os 'Parceiros da natureza'*/
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+/* Seção Parceiros da Natureza */
+.partners-container {
+    background-color: #e0f2f1;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+.partners-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+.partners-text img {
+    width: 50%; 
+    height: auto; 
+    max-height: 500px; 
+    border-radius: 10px;
+    object-fit: cover;
+}
+.partners-text div {
+    flex: 1;
+    text-align: left;
+}
+
+.partners-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+.partners-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+strong{
+    color: #4CAF50;
+}
+/* Aqui termina os 'Parceiros da natureza'*/
+/* Aqui começa a 'Seção Participe Desta Iniciativa' */
+.initiative-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    margin: 35px;
+    text-align: center;
+}
+.initiative-section h2{
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+    color: #4CAF50;
+
+}
+/* Conteúdo dentro da Iniciativa */
+.initiative-content {
+    margin-top: 30px;
+}
+.initiative-content p{
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+    color: #4CAF50;
+}
+/* Opções de Parceiros dentro da Iniciativa */
+.partner-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+
+}
+.partner-option {
+    text-align: center;
+    width: 350px; /* Define a largura da opção de parceiro */
+    position: relative;
+    overflow: hidden; /* Garante que o texto não ultrapasse a borda da imagem */
+}
+.partner-option img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+/* Animação de aumento na imagem */
+.partner-option:hover img {
+    transform: scale(1.05);
+}
+/* Descrições (inicialmente escondidas) */
+.descrição_juridico, .descrição_física { 
+    display: flex;
+    flex-direction: column; /* Garante que o texto seja empilhado verticalmente */
+    align-items: center; /* Centraliza o texto horizontalmente */
+    justify-content: center; /* Centraliza o texto verticalmente */
+    position: absolute;
+    top: 100%; /* Começa fora da imagem */
+    left: 0;
+    background-color: rgba(95, 94, 94, 0.979); /* Cor de fundo com opacidade */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center; /* Centraliza o texto */
+    font-size: 15px; /* Tamanho de fonte ligeiramente maior para melhorar a legibilidade */
+    transition: top 0.3s ease-in-out; /* Transição suave do texto */
+    z-index: 1; /* Garante que o texto fique acima da imagem */
+    height: 100%; /* Aumenta a altura do espaço para o texto */
+    overflow-y: auto; /* Adiciona rolagem se o texto for maior do que o espaço */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura/altura */
+}
+/* Exibe a descrição e move ela para dentro da imagem quando passar o mouse */
+.partner-option:hover .descrição_juridico {
+    top: 0%; /* Move o texto para dentro da imagem */
+}
+.partner-option:hover .descrição_física {
+    top: 0%; /* Move o texto para dentro da imagem */
+}
+/* Botões inicialmente escondidos dentro das descrições */
+.btn-initiative {
+    display: none; /* Esconde o botão inicialmente */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white; /* Cor de fundo do botão */
+    color: green;
+    text-decoration: none; /* Remove a sublinhado do link */
+    font-size: 16px;
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+}
+/* Exibe o botão quando o mouse passa sobre a opção de parceiro */
+.partner-option:hover .btn-initiative {
+    display: block; /* Torna o botão visível ao passar o mouse */
+}
+
+.partner-option p {
+    margin-top: 10px;
+}
+/* Aqui termina a 'Seção Participe Desta Iniciativa'*/
+/* AQUI COMEÇA AS RESPONSIVIDADES*/
+/* aqui temmos a responsividade do bacground nature com os hovers */
+@media (max-width: 768px) {
+    
+    .nature img {
+        width: 20%; 
+        max-width: none; 
+    }
+
+    .texto2nature {
+        padding-top: 5%;
+        padding: 2rem; 
+    }
+
+}
+/* responsivo dos hover */
+@media (max-width: 768px) {
+    .slide {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px; 
+        height: 50%;
+    }
+    /* Hover para expandir à esquerda */
+    .pagina1:hover, .pagina2:hover, .pagina3:hover, .pagina4:hover {
+        transform: translateX(-50px); 
+    }
+
+    /* Exibe o conteúdo abaixo da imagem */
+    .descricao, .descricao2, .descricao3, .descricao4 {
+        opacity: 0;
+        visibility: hidden;
+        position: relative;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        padding: 10px;
+        width: 100%;
+        left: 0;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        border-radius: 10px; 
+        font-size: 25px;   
+    }
+    .descricao {
+        left: 100px;
+        margin-right: 6rem;
+        margin-left: 4rem;
+    }
+    
+    .pagina1:hover .descricao, 
+    .pagina2:hover .descricao2, 
+    .pagina3:hover .descricao3, 
+    .pagina4:hover .descricao4 {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(10px);
+    }
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(10px); /* Efeito visual */
+}
+/* aqui termina os hovers*/ 
+@media (max-width: 480px) {
+    /* Seção Parceiros da Natureza */
+    .partners-container {
+        padding: 10px;
+    }
+
+    .partners-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .partners-text img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .partners-text div {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    /* Iniciativa */
+    .initiative-section h2 {
+        font-size: 1rem;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;  /* Usando a fonte Poppins */
+    }
+
+    .initiative-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .partner-options {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .partner-option {
+        max-width: 150px;
+        margin: auto;
+    }
+
+    .partner-option img {
+        width: 100%;
+        height: auto;
+    }
+
+    .partner-option p {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .slide {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px; 
+        height: 50%;
+    }
+    /* Hover para expandir à esquerda */
+    .pagina1:hover, .pagina2:hover, .pagina3:hover, .pagina4:hover {
+        transform: translateX(-50px); 
+    }
+
+    /* Exibe o conteúdo abaixo da imagem */
+    .descricao, .descricao2, .descricao3, .descricao4 {
+        opacity: 0;
+        visibility: hidden;
+        position: relative;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        padding: 10px;
+        width: 100%;
+        left: 0;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        border-radius: 10px; 
+        font-size: 16px;   
+    }
+    .descricao {
+        left: 100px;
+        margin-right: 6rem;
+        margin-left: 4rem;
+    }
+    
+    .pagina1:hover .descricao, 
+    .pagina2:hover .descricao2, 
+    .pagina3:hover .descricao3, 
+    .pagina4:hover .descricao4 {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(10px);
+    }
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(10px); /* Efeito visual */
+}
