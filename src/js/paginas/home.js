@@ -37,7 +37,7 @@ export function paginahome() {
 <!-- aqui termina onde nos encontrar-->
 
   <!-- aqui começa uma parte sobre informaçoes do que a gente quer fazer -->
-    ?????
+  
   <!-- aqui termina uma parte sobre informaçoes do que a gente quer fazer --> 
 
   <!-- aqui começa a parte das ODS-->
